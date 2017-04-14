@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Microsoft YaHei";
+    overflow-x: hidden;
+}
+
+.back {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+}
+
+.content {
+    padding: 50px;
+    background-color: transparent;
+}
+
+.version-title {
+    font-size: 32px;
+}
+
+.detail {
+    margin: 20px 0 28px 0;
+    overflow-wrap: break-word;
+    line-height: 35px;
+}
+
+.download-btn {
+    display: block;
+    height: 45px;
+    width: 160px;
+    border-radius: 5px;
+    line-height: 45px;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.download-btn:active {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.disable-btn:active {
+    background-color: #ffffff;
+    -webkit-tap-highlight-color: transparent;
+}

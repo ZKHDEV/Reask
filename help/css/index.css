@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+
+.back-animate-box {
+    height: 0;
+    width: 0;
+    background-color: transparent;
+}
+
+.circle{
+    position: absolute;
+    z-index: -1;
+    width: 1500px;
+    height: 1500px;
+    border: none;
+    border-radius: 750px;
+}
+
+/* 主页 */
+
+/***** 顶部标题栏 *****/
+.header {
+    padding: 30px 38px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.header-title{
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.vertical-line{
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    width: 6px;
+    height: 24px;
+    background-color: #ffffff;
+}
+
+/***** 菜单列表 *****/
+.menu {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 18px 38px;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pull-right{
+    float: right;
+}
+
+.icon-goto{
+    float: right;
+    position: relative;
+    top: -20px;
+    font-size: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/***** 全部按钮 *****/
+.all-btn {
+    display: block;
+    margin: 120px auto 50px auto;
+    border: none;
+    border-radius: 38px;
+    height: 76px;
+    width: 76px;
+    color: #ffffff;
+    box-shadow: 0 0 20px 5px #ededed;
+    line-height: 76px;
+    text-align: center;
+    text-decoration: none;  
+}
+
+.all-btn:active {
+    opacity: 0.6;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/***** 背景动画 *****/
+.firstcircle {
+    left: -650px;
+    top: -1020px;
+    opacity: 0.2;
+    -webkit-animation: firstcicleanimate 12s linear 3s infinite alternate;
+}
+
+.secondcircle {
+    left: -500px;
+    top: -1030px;
+    opacity: 0.8;
+    -webkit-animation: secondcicleanimate 10s linear 3s infinite alternate;
+}
+
+@-webkit-keyframes firstcicleanimate {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0.96);
+    }
+}
+
+@-webkit-keyframes secondcicleanimate {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+    }
+}
+
+/* 回答页 */
+
+/***** 顶部标题栏 *****/
+.question-header {
+    z-index: 101;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+.return-btn {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.return-text {
+    position: relative;
+    top: -6px;
+    left: 6px;
+    font-size: 10px;
+}
+
+/***** 头部背景动画 *****/
+.header-back {
+    left: -45px;
+    top: -380px;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-back .firstcircle {
+    top: -1020px;
+    -webkit-animation: firstcicleanimate2 10s linear 3s infinite alternate;
+}
+
+.header-back .secondcircle {
+    top: -1050px;
+    -webkit-animation: secondcicleanimate2 8s linear 3s infinite alternate;
+}
+
+@-webkit-keyframes firstcicleanimate2 {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0.98);
+    }
+}
+
+@-webkit-keyframes secondcicleanimate2 {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.02);
+    }
+}
+
+/***** 正文 *****/
+.content {
+    padding: 80px 38px 50px 38px;
+    word-wrap: break-word;
+    color: #000000;
+    line-height: 26px;
+}
+
+.content img {
+    display: block;
+    margin: 30px auto;
+    width: 95%;
+}
+
+/***** 点赞 *****/
+.like {
+    margin: 0 auto;
+    border: 6px solid; 
+    border-radius: 60px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+}
