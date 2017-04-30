@@ -1,6 +1,6 @@
-/*
-    回答页
-*/
+/**
+ * 回答页
+ */
 
 $(function () {
     $('.heart').on("click", heartAnimate);

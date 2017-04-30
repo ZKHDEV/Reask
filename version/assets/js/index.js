@@ -1,3 +1,8 @@
+/**
+ * 主题色
+ */
+
+// 获取URL参数
 var $_GET = (function () {
     var url = window.document.location.href.toString();
     var u = url.split("?");
@@ -35,6 +40,7 @@ var ColorPicker = (function () {
     }
 })();
 
+// 主题色对象
 var Color = {
     init: function () {
         this.initColor();

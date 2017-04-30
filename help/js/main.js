@@ -1,6 +1,6 @@
-/*
-    主页
-*/
+/**
+ * 主页
+ */
 
 $(function () {
     $('.all-btn').on('click', expandList);

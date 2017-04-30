@@ -1,6 +1,6 @@
-/*
-    主题色
-*/
+/**
+ * 主题色
+ */
 
 // 获取URL参数
 var $_GET = (function () {
@@ -48,15 +48,6 @@ var Color = {
                     $(this).attr('href', $linkHref + '?color=' + window.$no);
                 }
             });
-        }
-
-        // 详情页返回按钮
-        var $returnBtn = $('.return-btn');
-        if ($returnBtn.length) {
-            var $returnBtnHref = $returnBtn.attr('href');
-            if ($returnBtnHref.indexOf("color=") === -1) {
-                $returnBtn.attr('href', $returnBtnHref + '?color=' + window.$no);
-            }
         }
     }
 }
